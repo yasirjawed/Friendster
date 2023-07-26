@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 import Header from './header';
+
+import Tindercards from './Tindercards';
 import Person2Icon from '@mui/icons-material/Person2';
 import IconButton from '@mui/material/IconButton';
 import tinder from './tinder.png';
@@ -13,18 +15,20 @@ function App() {
 
   return (
     <>
-      <div className="header">
+      <div className="app">
+        
         {/*  header  */ } 
-          <IconButton>
-            <Person2Icon />
-          </IconButton>
-          <img className='header_logo' src={tinder} alt='logo'/> 
-          <IconButton>
-            <ForumIcon  fontSize='large' className='header_icon'/>
-          </IconButton> 
-        {/* tinder cards*/ }
-        {/* swipe buttons*/ }
+          <Header />
+        {/* header end */}
+
+        {/* tindercards */}
+        <Tindercards />
+        {/* tindercards end */}
       </div>
+
+    
+
+
     </>
   )
 }
